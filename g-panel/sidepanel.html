@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Office Suite</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- html2canvas library for screenshots -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+  <div id="app-container">
+    <div class="tab-navigation">
+      <button class="tab-btn active" data-tab="sheets">
+        <span class="sheet-icon">📊</span> Sheet
+      </button>
+      <button class="tab-btn" data-tab="docs">
+        <span class="doc-icon">📄</span> Doc
+      </button>
+    </div>
+
+    <!-- SHEETS TAB -->
+    <div id="sheets-tab" class="tab-content active">
+      <h1>Mini Sheet</h1>
+      <div class="controls">
+        <button id="addRowBtn" class="btn-sheets">+ Row</button>
+        <button id="clearBtn" class="btn-sheets">Clear</button>
+        <button id="screenshotBtn" class="btn-sheets btn-screenshot">📸 Screenshot</button>
+      </div>
+      <table id="spreadsheet">
+        <thead>
+          <tr>
+            <th></th>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <!-- Rows will be added here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- DOCS TAB -->
+    <div id="docs-tab" class="tab-content">
+      <h1>Mini Doc</h1>
+      <div class="doc-controls">
+        <button id="addDocSectionBtn" class="btn-docs">+ Section</button>
+        <button id="screenshotDocBtn" class="btn-docs btn-screenshot">📸 Screenshot</button>
+      </div>
+      <div id="docSections" class="doc-sections">
+        <!-- Collapsible sections will be added here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="docs-script.js"></script>
+</body>
+</html>
