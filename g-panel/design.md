@@ -3,6 +3,7 @@
 ## Architecture & Design Documentation
 
 ### Overview
+
 Mini Office Suite is a lightweight Chrome side panel extension that provides mini versions of Google Sheets and Google Docs functionality, optimized for quick note-taking, calculations, and document drafting while browsing.
 
 ### Color Palette
