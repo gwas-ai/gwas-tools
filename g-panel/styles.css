@@ -1,0 +1,34 @@
+/* SCREENSHOT BUTTON */
+.btn-screenshot {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* NOTIFICATIONS */
+.notification {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px 16px;
+  border-radius: 4px;
+  background-color: #34a853;
+  color: white;
+  font-size: 12px;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.notification.show {
+  opacity: 1;
+}
+
+.notification.error {
+  background-color: #ea4335;
+}
+
+.notification.info {
+  background-color: #4285f4;
+}
